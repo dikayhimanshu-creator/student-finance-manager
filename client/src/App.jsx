@@ -5,6 +5,7 @@ import ProtectedRoute from './components/ProtectedRoute'
 import Login from './pages/auth/Login'
 import Register from './pages/auth/Register'
 import Dashboard from './pages/dashboard/Dashboard'
+import Income from './pages/dashboard/Income'
 
 function App() {
   return (
@@ -20,6 +21,14 @@ function App() {
             element={
               <ProtectedRoute>
                 <Dashboard />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/income"
+            element={
+              <ProtectedRoute>
+                <Income />
               </ProtectedRoute>
             }
           />
