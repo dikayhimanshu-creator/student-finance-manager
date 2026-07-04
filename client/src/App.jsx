@@ -6,6 +6,7 @@ import Login from './pages/auth/Login'
 import Register from './pages/auth/Register'
 import Dashboard from './pages/dashboard/Dashboard'
 import Income from './pages/dashboard/Income'
+import Expenses from './pages/dashboard/Expenses'
 
 function App() {
   return (
@@ -32,6 +33,14 @@ function App() {
               </ProtectedRoute>
             }
           />
+          <Route
+  path="/expenses"
+  element={
+    <ProtectedRoute>
+      <Expenses />
+    </ProtectedRoute>
+  }
+/>
           <Route path="*" element={<Navigate to="/login" replace />} />
         </Routes>
       </AuthProvider>
