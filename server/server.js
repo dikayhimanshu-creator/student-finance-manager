@@ -7,6 +7,7 @@ import incomeRoutes from './routes/incomeRoutes.js'
 import expenseRoutes from './routes/expenseRoutes.js'
 import budgetRoutes from './routes/budgetRoutes.js'
 import dashboardRoutes from './routes/dashboardRoutes.js'
+import analyticsRoutes from './routes/analyticsRoutes.js'
 
 dotenv.config()
 connectDB()
@@ -26,6 +27,7 @@ app.use('/api/income', incomeRoutes)
 app.use('/api/expenses', expenseRoutes)
 app.use('/api/budget', budgetRoutes)
 app.use('/api/dashboard', dashboardRoutes)
+app.use('/api/analytics', analyticsRoutes)
 
 app.get('/', (req, res) => {
   res.json({
