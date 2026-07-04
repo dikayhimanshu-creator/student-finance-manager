@@ -9,6 +9,7 @@ import Income from './pages/dashboard/Income'
 import Expenses from './pages/dashboard/Expenses'
 import Budget from './pages/dashboard/Budget'
 import Analytics from './pages/dashboard/Analytics'
+import Profile from './pages/dashboard/Profile'
 
 function App() {
   return (
@@ -56,6 +57,14 @@ function App() {
   element={
     <ProtectedRoute>
       <Analytics />
+    </ProtectedRoute>
+  }
+/>
+<Route
+  path="/profile"
+  element={
+    <ProtectedRoute>
+      <Profile />
     </ProtectedRoute>
   }
 />
