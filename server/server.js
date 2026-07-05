@@ -18,7 +18,8 @@ const PORT = process.env.PORT || 5000
 app.use(cors({
   origin: [
     'http://localhost:5173',
-    'https://student-finance-manager-4xduywhn1-dikayts-projects.vercel.app'
+    'https://student-finance-manager-4xduywhn1-dikayts-projects.vercel.app',
+    'https://student-finance-manager-2jh2x1rpn-dikayts-projects.vercel.app'
   ],
   credentials: true
 }))
