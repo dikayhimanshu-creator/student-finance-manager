@@ -10,6 +10,7 @@ import dashboardRoutes from './routes/dashboardRoutes.js'
 import analyticsRoutes from './routes/analyticsRoutes.js'
 
 dotenv.config()
+console.log('MONGODB_URI exists:', !!process.env.MONGODB_URI)
 connectDB()
 
 const app = express()
