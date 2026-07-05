@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const API = axios.create({
-  baseURL: 'http://localhost:5000',
+  baseURL: 'https://student-finance-manager-api-3pvq.onrender.com',
 })
 
 // Attach JWT token to every request automatically
